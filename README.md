@@ -7,6 +7,7 @@ will run at `http://localhost:8000`
 todo:
 
 - CONNECT FORMS
+- license
 - a11y
   - browser audit
   - light mode
