@@ -2,7 +2,7 @@ import React from "react"
 import { useForm, ValidationError } from "@formspree/react"
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("TEST")
+  const [state, handleSubmit] = useForm("xaykydpr")
   if (state.succeeded) {
     return <p>thank you :3</p>
   }
@@ -79,7 +79,7 @@ const ContactForm = () => {
               Cat Picture <br />
               <input type="text" name="cat_pic" />
               <ValidationError
-                prefix="Cat Pic"
+                prefix="Cat Picture"
                 field="cat_pic"
                 errors={state.errors}
               />
