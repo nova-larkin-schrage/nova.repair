@@ -2,7 +2,9 @@ import React from "react"
 import { useForm, ValidationError } from "@formspree/react"
 
 const EmailListForm = () => {
-  const [state, handleSubmit] = useForm("TEST")
+  const [state, handleSubmit] = useForm("xoqbvrrv", {
+    data: { subject: "a person wants to join the email list! <3" },
+  })
   if (state.succeeded) {
     return <p>thank you! :3</p>
   }
