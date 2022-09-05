@@ -12,9 +12,14 @@ const Layout = ({ children, location }) => {
       <div className="background">
         <div className="nebula"></div>
       </div>
-      <div className="main">
+      <a className="skip-nav" href="#main-content">
+        Skip Navigation
+      </a>
+      <div className="page">
         <Header location={location} />
-        {children}
+        <main id="main-content" tabIndex="-1">
+          {children}
+        </main>
         <footer>
           <p>&#169; {new Date().getFullYear()} Nova Larkin Schrage</p>
           <p>statements not approved by NASA</p>

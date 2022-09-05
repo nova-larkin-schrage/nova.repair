@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 
 const WhoPage = props => (
   <Layout location={props.location}>
-    <main>
+    <div className="main">
       <article className="memphis-longhand">
         <h1>who?</h1>
         <p>what: mad disabled poet</p>
@@ -18,7 +18,7 @@ const WhoPage = props => (
         <p>living: with difficulty</p>
         <p>current location: west coast of turtle island</p>
       </article>
-    </main>
+    </div>
   </Layout>
 )
 

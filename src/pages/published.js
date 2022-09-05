@@ -5,13 +5,13 @@ import Seo from "../components/seo"
 
 const PublishedPage = props => (
   <Layout location={props.location}>
-    <main>
+    <div className="main">
       <article className="memphis-longhand">
         <h1>Published Work</h1>
         <p>...</p>
         <p>(nothing here yet, please check back later :) )</p>
       </article>
-    </main>
+    </div>
   </Layout>
 )
 
