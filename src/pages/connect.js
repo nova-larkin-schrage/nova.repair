@@ -7,7 +7,7 @@ import EmailListForm from "../components/email_list_form"
 
 const ConnectPage = props => (
   <Layout location={props.location}>
-    <main>
+    <div className="main">
       <article className="memphis-longhand">
         <h1>Connect</h1>
 
@@ -32,7 +32,7 @@ const ConnectPage = props => (
           <ContactForm />
         </div>
       </article>
-    </main>
+    </div>
   </Layout>
 )
 

@@ -40,7 +40,29 @@ a {
   background-repeat: no-repeat;
 }
 
-.main {
+.skip-nav {
+  position: absolute;
+  padding: 1em;
+  background-color: rgba(13, 18, 25, 0.8);
+  font-size: 1.2em;
+  top: 0.4em;
+  left: -10em;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.skip-nav:focus {
+  left: 1em;
+}
+
+@media (min-width: 47em) {
+  /* width where the skip navigation link is displayed offset from the page title */
+  .skip-nav:focus {
+    left: 13em;
+  }
+}
+
+.page {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -49,11 +71,18 @@ a {
 }
 
 main {
+  flex-grow: 1;
+}
+
+main:focus {
+  outline: none;
+}
+
+.main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-flow: column;
-  flex-grow: 1;
 }
 
 .big-text {
