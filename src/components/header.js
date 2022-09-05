@@ -18,7 +18,10 @@ const links = [
 ]
 
 const Header = ({ location }) => {
-  const { pathname } = location
+  var { pathname } = location
+  if (pathname.endsWith("/") && pathname.length > 1) {
+    pathname = pathname.substring(0, pathname.length - 1)
+  }
   return (
     <header>
       {pathname !== "/" && (
@@ -29,7 +32,11 @@ const Header = ({ location }) => {
       <nav>
         {links.map((link, i) => (
           <React.Fragment key={link.url}>
-            <Link to={link.url} className="nav-link">
+            <Link
+              to={link.url}
+              className="nav-link"
+              ariaCurrent={pathname === location ? "page" : false}
+            >
               <div className="nav-link-wrapper">{link.text}</div>
             </Link>
             <span className="nav-dots">
