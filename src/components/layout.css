@@ -72,6 +72,7 @@ a {
 
 main {
   flex-grow: 1;
+  display: flex;
 }
 
 main:focus {
@@ -83,6 +84,7 @@ main:focus {
   justify-content: flex-start;
   align-items: center;
   flex-flow: column;
+  flex-grow: 1;
 }
 
 .big-text {
