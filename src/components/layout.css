@@ -140,6 +140,18 @@ header {
   text-decoration: none;
 }
 
+/* lists & published work page */
+
+ul {
+  list-style-type: "✦";
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+/* forms & connect page */
+
 .displayForm {
   display: flex;
   flex-flow: column;
