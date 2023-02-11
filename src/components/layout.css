@@ -52,6 +52,12 @@ body {
 
 a {
   color: white;
+  text-decoration: underline white;
+  text-underline-offset: .15em;
+}
+
+a:hover {
+  color: white;
   text-decoration: underline white wavy;
 }
 
