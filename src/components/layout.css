@@ -170,7 +170,7 @@ li {
   }
 }
 
-.displayForm p {
+.displayForm .text {
   padding: 3em;
 }
 
@@ -211,7 +211,7 @@ label {
   width: 100%;
 }
 
-input[name="cat_pic"] {
+.full {
   width: 100%;
 }
 

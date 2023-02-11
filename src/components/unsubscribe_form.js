@@ -12,31 +12,6 @@ const ContactForm = () => {
         <div className="formRow">
           <div className="formItem">
             <label>
-              Name <br />
-              <input type="text" name="name" />
-              <ValidationError
-                prefix="Name"
-                field="name"
-                errors={state.errors}
-              />
-            </label>
-          </div>
-          <div className="formItem">
-            <label>
-              Pronouns <br />
-              <input type="text" name="pronouns" />
-              <ValidationError
-                prefix="Pronouns"
-                field="pronouns"
-                errors={state.errors}
-              />
-            </label>
-          </div>
-        </div>
-
-        <div className="formRow">
-          <div className="formItem">
-            <label>
               Email <br />
               <input type="email" name="email" />
               <ValidationError
@@ -46,13 +21,18 @@ const ContactForm = () => {
               />
             </label>
           </div>
+        </div>
+
+        <div className="formRow">
           <div className="formItem">
             <label>
-              Subject <br />
-              <input type="text" name="subject" />
+              <input type="checkbox" name="interest" />
+              I'm still interested in an email digest of your work,
+              and would continue subscribing if the email list changed
+              in the following ways (please describe below)
               <ValidationError
-                prefix="Subject"
-                field="subject"
+                prefix="Interest"
+                field="interest"
                 errors={state.errors}
               />
             </label>
@@ -62,11 +42,11 @@ const ContactForm = () => {
         <div className="formRow">
           <div className="formItem">
             <label>
-              Message <br />
-              <textarea name="message" />
+              Comments <br />
+              <textarea name="comments" />
               <ValidationError
-                prefix="Message"
-                field="message"
+                prefix="Comments"
+                field="comments"
                 errors={state.errors}
               />
             </label>
@@ -76,11 +56,11 @@ const ContactForm = () => {
         <div className="formRow">
           <div className="formItem">
             <label>
-              Cat Picture <br />
-              <input type="text" name="cat_pic" className="full" />
+              <input type="checkbox" name="contact" />
+              Please alert me via email if these changes are made
               <ValidationError
-                prefix="Cat Picture"
-                field="cat_pic"
+                prefix="Contact"
+                field="contact"
                 errors={state.errors}
               />
             </label>
@@ -90,7 +70,7 @@ const ContactForm = () => {
         <div className="formButtonRow">
           <div className="formItem">
             <button type="submit" disabled={state.submitting}>
-              i promise that this is not a curse
+              unsubscribe
             </button>
           </div>
         </div>
@@ -98,13 +78,5 @@ const ContactForm = () => {
     </div>
   )
 }
-
-/*
-I am contacting you about:
-poetry
-star repair
-pay/rate transparencyx
-an image of a cat on the internet
-*/
 
 export default ContactForm
